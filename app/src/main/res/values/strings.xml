@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Slots</string>
+    <string name="jugar">JUGAR!!!</string>
+    <string name="juegas">Te juegas</string>
+    <string name="ganado">Has ganado</string>
+    <string name="puntos">Puntos</string>
+    <string name="apuesta">Apuesta</string>
+    <string name="tabla">Tabla</string>
+    <string name="slot">slot</string>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDCDCF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblPuntos2"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/puntos"
+        android:textAlignment="viewStart"
+        android:textColor="#3C3C3C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSlot3" />
+
+    <EditText
+        android:id="@+id/txtGanado"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="18dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="none|number"
+        android:textColor="#3C3C3C"
+        app:layout_constraintEnd_toStartOf="@+id/lblPuntos2"
+        app:layout_constraintStart_toEndOf="@+id/lblJuegas3"
+        app:layout_constraintTop_toBottomOf="@+id/imgSlot2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/lblJuegas3"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/ganado"
+        android:textAlignment="viewStart"
+        android:textColor="#3C3C3C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSlot1" />
+
+    <ImageView
+        android:id="@+id/imgSlot3"
+        android:layout_width="107dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="@string/slot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPuntos1" />
+
+    <ImageView
+        android:id="@+id/imgSlot2"
+        android:layout_width="107dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/slot"
+        app:layout_constraintEnd_toStartOf="@+id/imgSlot3"
+        app:layout_constraintStart_toEndOf="@+id/imgSlot1"
+        app:layout_constraintTop_toBottomOf="@+id/txtApuesta" />
+
+    <ImageView
+        android:id="@+id/imgReglas"
+        android:layout_width="352dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="@string/tabla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/slotsboard" />
+
+    <Button
+        android:id="@+id/btnJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="133dp"
+        android:onClick="jugar"
+        android:text="@string/jugar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgReglas" />
+
+    <TextView
+        android:id="@+id/lblJuegas"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/juegas"
+        android:textAlignment="viewStart"
+        android:textColor="#3C3C3C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJugar" />
+
+    <TextView
+        android:id="@+id/lblPuntos1"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/puntos"
+        android:textAlignment="viewStart"
+        android:textColor="#3C3C3C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJugar" />
+
+    <EditText
+        android:id="@+id/txtApuesta"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/apuesta"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="#3C3C3C"
+        app:layout_constraintEnd_toStartOf="@+id/lblPuntos1"
+        app:layout_constraintStart_toEndOf="@+id/lblJuegas"
+        app:layout_constraintTop_toBottomOf="@+id/btnJugar"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgSlot1"
+        android:layout_width="107dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/slot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblJuegas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
